@@ -4,23 +4,23 @@ set IniFile=0IniFile.ini
 set ReleaseFile=README.md
 rem ==================
 
-echo ä¾ç…§iniæª”å»ç·¨å¯«æ–°åŒæ–‡å ‚çš„è‡ªè¨‚è©å½™åŒ¯å…¥è¨­å®š
+echo ¨Ì·ÓiniÀÉ¥h½s¼g·s¦P¤å°óªº¦Û­qµü·J¶×¤J³]©w
 echo ########################################################################
-echo                                 ä½¿ç”¨èªªæ˜:
+echo                                 ¨Ï¥Î»¡©ú:
 echo ########################################################################
-echo 1. %IniFile% åŠ å…¥è¦ç·¨å¯«çš„è©å½™ï¼Œå·¦é‚Šæ˜¯ä¸­åœ‹è©å½™ï¼Œå³é‚Šæ˜¯å°ç£è©å½™
-echo 2. æŒ‰ä¸‹ä»»ä¸€éµå¾Œï¼Œé–‹å§‹ç·¨å¯«è¨­å®š
+echo 1. %IniFile% ¥[¤J­n½s¼gªºµü·J¡A¥ªÃä¬O¤¤°êµü·J¡A¥kÃä¬O¥xÆWµü·J
+echo 2. «ö¤U¥ô¤@Áä«á¡A¶}©l½s¼g³]©w
 pause
 
 rem ==================
 setlocal enabledelayedexpansion
 cd /d %~dp0
 if exist %ReleaseFile% del /q %ReleaseFile%
->>%ReleaseFile% set /p="{"version":"","autoConvert":"none","iconAction":"auto","symConvert":true,"inputConvert":"none","fontCustom":{"enable":false,"trad":"PMingLiU,MingLiU,æ–°ç´°æ˜é«”,ç´°æ˜é«”","simp":"MS Song,å®‹ä½“,SimSun"},"urlFilter":{"enable":false,"list":[]},"userPhrase":{"enable":true,"trad":{"  <nul 
+>>%ReleaseFile% set /p="{"version":"","autoConvert":"none","iconAction":"auto","symConvert":true,"inputConvert":"none","fontCustom":{"enable":false,"trad":"PMingLiU,MingLiU,·s²Ó©úÅé,²Ó©úÅé","simp":"MS Song,§ºÊ^,SimSun"},"urlFilter":{"enable":false,"list":[]},"userPhrase":{"enable":true,"trad":{"  <nul 
 for /f "tokens=1*" %%i in (%IniFile%) do (
-rem ===è¤‡è£½è³‡æ–™å¤¾===
+rem ===½Æ»s¸ê®Æ§¨===
 
 >>%ReleaseFile% set /p=""%%i":"%%j","  <nul 
 )
->>%ReleaseFile% set /p=""åˆ†å±":"åˆ†å‰²è¢å¹•"},"simp":{}},"contextMenu":{"enable":true}}"  <nul 
+>>%ReleaseFile% set /p=""¤À«Ì":"¤À³Î¿Ã¹õ"},"simp":{}},"contextMenu":{"enable":true}}"  <nul 
 rem ==================
