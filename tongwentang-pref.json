@@ -1,0 +1,46 @@
+{
+  "filter": {
+    "enabled": true,
+    "rules": []
+  },
+  "general": {
+    "autoConvert": "disabled",
+    "browserAction": "auto",
+    "debugMode": false,
+    "defaultTarget": "s2t",
+    "spaMode": true
+  },
+  "menu": {
+    "enabled": true,
+    "group": {
+      "textarea": {
+        "s2t": true,
+        "t2s": true
+      },
+      "webpage": {
+        "s2t": true,
+        "t2s": true
+      }
+    }
+  },
+  "meta": {
+    "update": 1617376664216
+  },
+  "version": 2,
+  "word": {
+    "custom": {
+      "s2t": {},
+      "t2s": {}
+    },
+    "default": {
+      "s2t": {
+        "char": true,
+        "phrase": true
+      },
+      "t2s": {
+        "char": true,
+        "phrase": true
+      }
+    }
+  }
+}
